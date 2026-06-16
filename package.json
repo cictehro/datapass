@@ -1,0 +1,15 @@
+{
+"name": "passport-index",
+"version": "1.0.0",
+"type": "module",
+"scripts": {
+"validate": "tsx scripts/validate.ts",
+"build": "tsx scripts/build.ts",
+"stats": "tsx scripts/stats.ts",
+"generate": "npm run validate && npm run build && npm run stats"
+},
+"devDependencies": {
+"tsx": "^4.20.0",
+"typescript": "^5.9.0"
+}
+}
