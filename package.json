@@ -6,7 +6,8 @@
 "validate": "tsx scripts/validate.ts",
 "build": "tsx scripts/build.ts",
 "stats": "tsx scripts/stats.ts",
-"generate": "npm run validate && npm run build && npm run stats"
+"check": "tsx scripts/check.ts",
+"generate": "npm run validate && npm run build && npm run stats && npm run check"
 },
 "devDependencies": {
 "tsx": "^4.20.0",
