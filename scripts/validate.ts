@@ -1,5 +1,7 @@
 import fs from "fs";
 
+import VALID_STATUSES from "scripts/constants.ts";
+
 const csv = fs.readFileSync("./data/master.csv", "utf8");
 
 const lines = csv.trim().split("\n");
