@@ -636,22 +636,22 @@
   },
   {
     "rank": 128,
-    "passport": "KE",
-    "score": 107
-  },
-  {
-    "rank": 129,
     "passport": "MN",
     "score": 107
   },
   {
-    "rank": 130,
+    "rank": 129,
     "passport": "AZ",
     "score": 105
   },
   {
-    "rank": 131,
+    "rank": 130,
     "passport": "IN",
+    "score": 105
+  },
+  {
+    "rank": 131,
+    "passport": "KE",
     "score": 105
   },
   {
