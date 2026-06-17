@@ -651,27 +651,27 @@
   },
   {
     "rank": 131,
-    "passport": "KE",
-    "score": 105
-  },
-  {
-    "rank": 132,
     "passport": "ZM",
     "score": 105
   },
   {
-    "rank": 133,
+    "rank": 132,
     "passport": "BJ",
     "score": 104
   },
   {
-    "rank": 134,
+    "rank": 133,
     "passport": "GH",
     "score": 104
   },
   {
-    "rank": 135,
+    "rank": 134,
     "passport": "GM",
+    "score": 104
+  },
+  {
+    "rank": 135,
+    "passport": "KE",
     "score": 104
   },
   {
