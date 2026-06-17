@@ -1,0 +1,64 @@
+import fs from "fs";
+
+// ============================================================
+// Generates/appends to CHANGELOG.md after every build
+// Records what changed vs the previous run
+// ============================================================
+
+const CHANGELOG_PATH = "./CHANGELOG.md";
+const MATRIX_PATH = "./data/passport_matrix.json";
+const RANKINGS_PATH = "./generated/rankings.json";
+const SCORES_PATH = "./generated/scores.json";
+
+const matrix: Record<string, Record<string, string[]>> = JSON.parse(
+  fs.readFileSync(MATRIX_PATH, "utf8")
+);
+const rankings: { rank: number; passport: string; score: number }[] = JSON.parse(
+  fs.readFileSync(RANKINGS_PATH, "utf8")
+);
+const scores: Record<string, number> = JSON.parse(
+  fs.readFileSync(SCORES_PATH, "utf8")
+);
+
+const date = new Date().toISOString().split("T")[0];
+const totalRoutes = Object.values(matrix).reduce(
+  (a, b) => a + Object.keys(b).length, 0
+);
+const top = rankings[0];
+const last = rankings.at(-1)!;
+
+// Read existing changelog
+const existing = fs.existsSync(CHANGELOG_PATH)
+  ? fs.readFileSync(CHANGELOG_PATH, "utf8")
+  : "";
+
+// Extract previous totals from last entry if available
+const prevRoutesMatch = existing.match(/Routes\s*\|\s*([\d,]+)/);
+const prevRoutes = prevRoutesMatch ? parseInt(prevRoutesMatch[1].replace(",", "")) : null;
+const routeDiff = prevRoutes !== null ? totalRoutes - prevRoutes : null;
+const diffStr = routeDiff !== null
+  ? routeDiff > 0 ? ` (+${routeDiff})` : routeDiff < 0 ? ` (${routeDiff})` : " (no change)"
+  : "";
+
+const entry = `## ${date}
+
+| Metric | Value |
+|--------|-------|
+| Passports | ${Object.keys(matrix).length} |
+| Routes | ${totalRoutes.toLocaleString()}${diffStr} |
+| Top ranked | ${top.passport} (score: ${top.score}) |
+| Last ranked | ${last.passport} (score: ${last.score}) |
+
+---
+
+`;
+
+// Prepend new entry after title
+const title = "# Changelog\n\n";
+if (existing.startsWith(title)) {
+  fs.writeFileSync(CHANGELOG_PATH, title + entry + existing.slice(title.length));
+} else {
+  fs.writeFileSync(CHANGELOG_PATH, title + entry);
+}
+
+console.log(`✓ Changelog updated (${date})`);
