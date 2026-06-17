@@ -1,16 +1,17 @@
 {
-"name": "passport-index",
-"version": "1.0.0",
-"type": "module",
-"scripts": {
-"validate": "tsx scripts/validate.ts",
-"build": "tsx scripts/build.ts",
-"stats": "tsx scripts/stats.ts",
-"check": "tsx scripts/check.ts",
-"generate": "npm run validate && npm run build && npm run stats && npm run check"
-},
-"devDependencies": {
-"tsx": "^4.20.0",
-"typescript": "^5.9.0"
-}
+  "name": "passport-index",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "validate": "tsx scripts/validate.ts",
+    "build": "tsx scripts/build.ts",
+    "stats": "tsx scripts/stats.ts",
+    "check": "tsx scripts/check.ts",
+    "generate": "npm run validate && npm run build && npm run stats && npm run check",
+    "edit": "tsx scripts/edit.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
 }
