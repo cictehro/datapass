@@ -83,6 +83,16 @@ stats.ts
     ↓
 generated/*
 ```
+## CLI
+
+```
+npm run edit -- add KE US vf 90      # add/update
+npm run edit -- remove KE US         # remove
+npm run edit -- lookup KE SG         # check one route
+npm run edit -- passport KE          # all KE routes
+npm run edit -- destination US       # who can enter US visa-free etc
+```
+
 
 ## Tech Stack
 
