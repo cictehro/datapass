@@ -19,12 +19,13 @@ jobs:
           node-version: 22
 
       - run: npm install
+      - run: npm test
       - run: npm run generate
 
       - name: Commit generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/passport_matrix.json generated/
+          git add data/passport_matrix.json generated/ CHANGELOG.md
           git diff --cached --quiet || git commit -m "chore: regenerate [$(date +'%Y-%m-%d')]"
           git push
