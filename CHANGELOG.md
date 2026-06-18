@@ -4,6 +4,17 @@
 
 | Metric | Value |
 |--------|-------|
+| Passports | 230 |
+| Routes | 45,011 (+36) |
+| Top ranked | CH (score: 211) |
+| Last ranked | YT (score: 1) |
+
+---
+
+## 2026-06-18
+
+| Metric | Value |
+|--------|-------|
 | Passports | 199 |
 | Routes | 44,975 (no change) |
 | Top ranked | CH (score: 211) |
