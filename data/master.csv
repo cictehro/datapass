@@ -19664,7 +19664,7 @@ JP,ZW,vo,
 KE,AD,vr,
 KE,AE,vr,
 KE,AF,vr,
-KE,AG,vr,180
+KE,AG,vf,180
 KE,AI,ev,
 KE,AL,ev,
 KE,AM,vr,
@@ -19722,7 +19722,7 @@ KE,EE,vr,
 KE,EG,vr,
 KE,ER,vf,
 KE,ES,vr,
-KE,ET,vf,
+KE,ET,vf,360
 KE,FI,vr,
 KE,FJ,vf,
 KE,FK,vr,
