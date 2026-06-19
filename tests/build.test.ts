@@ -19,7 +19,10 @@ describe("build", () => {
   it("matrix has expected passport count", () => {
     const matrix = JSON.parse(fs.readFileSync(matrixPath, "utf8"));
     const count = Object.keys(matrix).length;
-    assert.ok(count >= 190 && count <= 210, `Unexpected passport count: ${count}`);
+    // Range covers ~195 sovereign states plus passport-issuing territories
+    // and SARs included in this dataset (e.g. Hong Kong, Macau, Bermuda,
+    // Cayman Islands, American Samoa). Update if the dataset's scope changes.
+    assert.ok(count >= 190 && count <= 235, `Unexpected passport count: ${count}`);
   });
 
   it("each passport entry is a non-empty object", () => {
