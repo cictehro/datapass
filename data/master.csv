@@ -17421,7 +17421,6 @@ KE,BI,vf,90
 KE,BJ,vf,90
 KE,BN,vr,
 KE,BO,vo,90
-KE,BQ,vr,
 KE,BR,vr,
 KE,BS,vf,90
 KE,BT,vr,
@@ -17459,7 +17458,6 @@ KE,FI,vr,
 KE,FJ,vf,120
 KE,FM,vf,
 KE,FR,vr,
-KE,FW,vr,
 KE,GA,ev,30
 KE,GB,vr,
 KE,GD,vf,30
@@ -17513,7 +17511,6 @@ KE,MC,vr,
 KE,MD,vr,
 KE,ME,vr,
 KE,MG,vo,90
-KE,MH,vr,
 KE,MK,vr,
 KE,ML,vr,
 KE,MM,vr,
