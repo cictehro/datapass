@@ -218,7 +218,6 @@ AE,BI,vo,30
 AE,BJ,vf,14
 AE,BN,vf,30
 AE,BO,vf,90
-AE,BQ,vf,90
 AE,BR,vf,90
 AE,BS,vf,90
 AE,BT,ev,
@@ -418,7 +417,6 @@ AF,BI,vo,
 AF,BJ,ev,
 AF,BN,vr,
 AF,BO,ev,
-AF,BQ,vr,
 AF,BR,vr,
 AF,BS,ev,
 AF,BT,ev,
