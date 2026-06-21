@@ -17363,7 +17363,7 @@ KE,NZ,vr,
 KE,OM,vr,
 KE,PA,vf,90
 KE,PE,vr,
-KE,PG,vr,
+KE,PG,et,60
 KE,PH,vf,30
 KE,PK,ev,
 KE,PL,vr,
