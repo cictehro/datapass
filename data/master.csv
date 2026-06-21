@@ -12215,7 +12215,7 @@ GD,NZ,vf,90
 GD,OM,ev,
 GD,PA,vf,180
 GD,PE,vf,180
-GD,PG,vr,
+GD,PG,vo,60
 GD,PH,vf,30
 GD,PK,ev,
 GD,PL,vf,90
@@ -35382,7 +35382,7 @@ TR,NZ,vf,90
 TR,OM,vf,
 TR,PA,vf,
 TR,PE,vf,
-TR,PG,vr,
+TR,PG,vo,60
 TR,PH,vf,
 TR,PK,ev,
 TR,PL,vr,
